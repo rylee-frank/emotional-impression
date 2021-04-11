@@ -66,31 +66,30 @@ function draw() {
 		// 	circle(0, 200, diameter);
 		// }
 		//DISGUST
-		if ((position[62][1]<155)&&(position[62][1]>145)) {
+		// else if ((position[62][1]<155)&&(position[62][1]>145)) {
 
-			noFill();
-			strokeWeight(2);
-			stroke("#000059")
-			circle(0, 200, diameter);
-		} 
-		
+		// 	noFill();
+		// 	strokeWeight(2);
+		// 	stroke("#000059")
+		// 	circle(0, 200, diameter);
+		// } 
 		
 		// //SHOCK
-		// else if ((position[57][1]<236)&&(position[57][1]>200)) {
+		// else if ((position[57][1]<236)&&(position[57][1]>210)) {
 
 		// 	noFill();
 		// 	strokeWeight(3);
-		// 	stroke("#ffffff")
+		// 	stroke("#000059")
 		// 	circle(0, 200, diameter);
 		// }
 		// //SKEPTICISM
-		// else if ((position[20][1]<100)&&(position[17][1]<97)) {
+		else if ((position[20][1]<100)&&(position[17][1]<97)) {
 
-		// 	noFill();
-		// 	strokeWeight(5);
-		// 	stroke("#ed3911")
-		// 	circle(0, 200, diameter);
-		// }
+			noFill();
+			strokeWeight(5);
+			stroke("#ed3911")
+			circle(0, 200, diameter);
+		}
 		// //HAPPINESS
 		// else if ((position[44][1]<200)&&(position[50][1]<200)&&(position[44][1]>180)&&(position[50][1]>180)) {
 
@@ -100,14 +99,14 @@ function draw() {
 		// 	circle(0, 200, diameter);
 		// }
 		//BOREDOM
-		else {
+		// else {
 
-			stroke("#000000");
-			// noFill();
-			// strokeWeight(1);
-			// stroke("#ed3911")
-			// circle(0, 200, diameter);
-		}
+		// 	stroke("#000000");
+		// 	// noFill();
+		// 	// strokeWeight(1);
+		// 	// stroke("#ed3911")
+		// 	// circle(0, 200, diameter);
+		// }
 
 	}
 }
