@@ -2,7 +2,6 @@
 var vidCapture, cTracker, drawCanvas;
 
 function setup() {
-
 	var cvn = createCanvas(windowWidth, windowHeight/2);
 	cvn.parent('canvas');
 
@@ -20,69 +19,86 @@ function setup() {
 
 function draw() {
 
-	var x = 15;	
-
-	background(255);
-	stroke(0);
-	noFill();
-	rect(175,50, 225, 225);
-	strokeWeight(0.5);
-	line(210, 20, 210, 300);
-	line(360, 20, 360, 300);
-	line(160, 160, 420, 160);
-	line(160, 245, 420, 245);
-	
+	var diameter = random(10, 200);
 
 	translate(vidCapture.width, 0);
 	scale(-1,1);
-	
-	//image(vidCapture, 0,0);
-
 
 	var position = cTracker.getCurrentPosition();
 
-
 	if (position) {
-		//content calling from facial trace
-		strokeWeight(2);
+			stroke(0);
+			fill("#ffffff");
+			strokeWeight(0.5);
+			rect(175, 50, 225, 225);
+			line(210, 20, 210, 300);
+			line(360, 20, 360, 300);
+			line(160, 160, 420, 160);
+			line(160, 245, 420, 245);
 
-		//print("y: " + position[20][1]);
-		//only work in this statement
-		cTracker.draw(drawCanvas);
+			strokeWeight(2);
+			cTracker.draw(drawCanvas);
+//makes laoding extremely slow and inconsistent
+		// if ((position[1][0]>175)&&(position[13][0]<320)) {
+		// 	stroke(0);
+		// 	fill("#ffffff");
+		// 	rect(175, 50, 225, 225);
 
+		// 	strokeWeight(0.5);
+		// 	line(210, 20, 210, 300);
+		// 	line(360, 20, 360, 300);
+		// 	line(160, 160, 420, 160);
+		// 	line(160, 245, 420, 245);
+
+		// 	strokeWeight(2);
+		// 	cTracker.draw(drawCanvas);
+		// }
+		//DEFIANCE
+
+		if ((position[7][1]<240)&&(position[7][1]>230)) {
+
+			noFill();
+			strokeWeight(10);
+			stroke("#11ed11")
+
+			circle(0, 200, diameter);
+		}
 		//DISGUST
-		if ((position[62][1]<152)&&(position[62][1]>148)) {
-			x = x+10;
+		else if ((position[62][1]<152)&&(position[62][1]>143)) {
 
 			noFill();
+			strokeWeight(2);
 			stroke("#6f8695")
-			circle(0, 150, x);
+			circle(0, 200, diameter);
 		} 
+		
+		
 		//SHOCK
-		if ((position[57][1]<205)&&(position[57][1]>196)) {
-			x = x+10;
+		else if ((position[57][1]<205)&&(position[57][1]>196)) {
 
 			noFill();
+			strokeWeight(3);
 			stroke("#11e6ed")
-			circle(0, 150, x);
+			circle(0, 200, diameter);
 		}
 		//SKEPTICISM
-		if ((position[20][1]<100)&&(position[21][1]<100)&&(position[17][1]<100)&&(position[16][1]<100)) {
-			x = x+10;
+		else if ((position[20][1]<100)&&(position[17][1]<97)) {
 
 			noFill();
+			strokeWeight(5);
 			stroke("#ed3911")
-			circle(0, 150, x);
-		} 
+			circle(0, 200, diameter);
+		}
+
 		//BOREDOM
 		else {
-			// x = x+10;
-			// stroke("#EDDE11");
-			// noFill();
-			// stroke("#ed3911")
-			// circle(0, 150, x);
+
+			stroke("#000000");
+			noFill();
+			strokeWeight(1);
+			stroke("#ed3911")
+			circle(0, 200, diameter);
 		}
 
 	}
-	
 }
