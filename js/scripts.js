@@ -2,7 +2,7 @@
 var vidCapture, cTracker, drawCanvas;
 
 function setup() {
-	var cvn = createCanvas(windowWidth, windowHeight/2+50);
+	var cvn = createCanvas(windowWidth, windowHeight/2+75);
 	cvn.parent('canvas');
 
 	vidCapture = createCapture(VIDEO);
