@@ -12,6 +12,13 @@ html, body {
 img {
 	max-width: 100%;
 }
+a {
+	text-decoration: none;
+	color: #F7EDE2;
+}
+a:hover {
+	color: #B6174B;
+}
 header {
 	margin-top: 30px;
 }
@@ -32,7 +39,7 @@ header {
 	grid-column-end: 5;
 	border-bottom: 8px;
 	border-bottom-style: dotted;
-	border-bottom-color: #B6174B;
+	border-bottom-color: #A8763E;
 }
 .parent-canvas {
 	display: grid;
@@ -61,7 +68,24 @@ header {
 	padding-left: 30px;
 	margin-top: 78px;
 	text-align: left;
-
+}
+footer {
+	display: grid;
+	grid-template-columns: respeat(2. 1fr);
+	grid-column-gap: 15px;
+	padding: 20px;
+	background-color: #A8763E;
+}
+.copyright {
+	grid-column: 1;
+	text-align: right;
+	border-right-style: dotted;
+	border-right-width: 4px;
+	border-right-color:  #B6174B;;
+	padding-right: 15px;
+}
+.libraries {
+	grid-column: 2;
 }
 /*		TYPOGRAPHY		*/
 
@@ -72,7 +96,7 @@ h1 {
 
 h2 {
 	font-family: 'Roboto Slab', serif;
-	color; #A8763E;s
+	color: #B6174B;
 }
 h3 {
 	font-family: 'Major Mono Display', monospace;
@@ -82,4 +106,10 @@ h4 {
 	font-family: 'Major Mono Display', monospace;
 	font-size: 18px;
 	color: #A8763E;
+}
+p {
+	font-family: 'Roboto Slab', serif;
+	font-size: 16px;
+	margin: 0;
+	color: #F7EDE2;
 }
