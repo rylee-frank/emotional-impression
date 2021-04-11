@@ -39,8 +39,9 @@ function draw() {
 			strokeWeight(2);
 			cTracker.draw(drawCanvas);
 
-			//print("y:" + position[0][1] + "y:" + position[14][1]);
-//makes laoding extremely slow and inconsistent
+			//print("y:" + position[61][1]+ "y:" + position[59][1]);
+
+		//makes laoding extremely slow and inconsistent
 		// if ((position[1][0]>175)&&(position[13][0]<320)) {
 		// 	stroke(0);
 		// 	fill("#ffffff");
@@ -59,64 +60,70 @@ function draw() {
 		//SHOCK
 		if ((position[57][1]<225)&&(position[57][1]>210)) {
 			noFill();
-			strokeWeight(3);
+			strokeWeight(0.5);
 			stroke("#ffffff")
 			circle(0, 200, diameter);
 		}
 		//SKEPTICISM
-		else if ((position[20][1]<105)&&(position[17][1]<105)) {
+		else if ((position[20][1]<107)&&(position[17][1]<107)) {
 			noFill();
 			strokeWeight(5);
 			stroke("#ed3911")
 			circle(0, 200, diameter);
 		}
 		//HAPPINESS
-		else if ((position[44][1]<197)&&(position[50][1]<195)&&(position[44][1]>180)&&(position[50][1]>180)) {
+		else if ((position[59][1]<193)&&(position[61][1]<193)&&(position[59][1]>187)&&(position[61][1]>187)) {
 			noFill();
-			strokeWeight(2);
+			strokeWeight(3);
 			stroke("#edde11")
 			circle(0, 200, diameter);
 		}
 		//DEFIANCE
-		else if ((position[7][0]>210)&&(position[7][0]<260)) {
+		else if ((position[7][0]<320)&&(position[7][0]>290)) {
 			noFill();
-			strokeWeight(15);
+			strokeWeight(9);
+			stroke("#11ed11");
+			circle(0, 200, diameter);
+		}
+		else if ((position[7][0]>245)&&(position[7][0]<260)) {
+			noFill();
+			strokeWeight(9);
 			stroke("#11ed11");
 			circle(0, 200, diameter);
 		}
 		//SHAME
 		else if ((position[7][1]>255)&&(position[7][1]<275)) {
 			noFill();
-			strokeWeight(15);
+			strokeWeight(2);
 			stroke("#8f0651");
 			circle(0, 200, diameter);
 		}
 		//CONFUSED
-		else if ((position[0][0]>230)&&(position[0][0]<243)) {
+		else if ((position[0][0]>240)&&(position[0][0]<253)) {
 			noFill();
-			strokeWeight(14);
+			strokeWeight(6);
 			stroke("#d67281");
 			circle(0, 200, diameter);
 		}
 		else if ((position[14][0]<340)&&(position[14][0]>310)) {
 			noFill();
-			strokeWeight(14);
+			strokeWeight(6);
 			stroke("#d67281");
 			circle(0, 200, diameter);		
 		}
 		//BOREDOM
-		else if ((position[57][1]<198)&&(position[57][1]>195)) {
+		else if ((position[57][1]<200)&&(position[57][1]>195)) {
 			noFill();
 			strokeWeight(1);
 			stroke("#899c9a")
 			circle(0, 200, diameter);
 		}
-				//DISGUST
-		else if ((position[62][1]<155)&&(position[62][1]>135)) {
-			noFill();
-			strokeWeight(10);
-			stroke("#000059")
-			circle(0, 200, diameter);
-		} 
+		// //DISGUST
+		// else if ((position[37][1]>165)&&(position[37][1]<171)) {
+		// 	noFill();
+		// 	strokeWeight(10);
+		// 	stroke("#000059")
+		// 	circle(0, 200, diameter);
+		// } 
 	}
 }
