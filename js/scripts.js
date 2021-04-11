@@ -23,8 +23,15 @@ function draw() {
 	var x = 15;	
 
 	background(255);
-	rect(175,50, 225, 225);
 	stroke(0);
+	noFill();
+	rect(175,50, 225, 225);
+	strokeWeight(0.5);
+	line(210, 20, 210, 300);
+	line(360, 20, 360, 300);
+	line(160, 160, 420, 160);
+	line(160, 245, 420, 245);
+	
 
 	translate(vidCapture.width, 0);
 	scale(-1,1);
@@ -38,24 +45,42 @@ function draw() {
 	if (position) {
 		//content calling from facial trace
 		strokeWeight(2);
-		stroke(0);
 
-		print("y: " + position[57][1]);
+		//print("y: " + position[20][1]);
 		//only work in this statement
 		cTracker.draw(drawCanvas);
 
-		if ((position[62][1]<155)&&(position[62][1]>135)) {
+		//DISGUST
+		if ((position[62][1]<152)&&(position[62][1]>148)) {
 			x = x+10;
 
 			noFill();
-			circle(100, 100, x);
+			stroke("#6f8695")
+			circle(0, 150, x);
 		} 
-
-		if ((position[57][1]<210)&&(position[57][1]>192)) {
+		//SHOCK
+		if ((position[57][1]<205)&&(position[57][1]>196)) {
 			x = x+10;
 
 			noFill();
-			circle(100, 100, x);
+			stroke("#11e6ed")
+			circle(0, 150, x);
+		}
+		//SKEPTICISM
+		if ((position[20][1]<100)&&(position[21][1]<100)&&(position[17][1]<100)&&(position[16][1]<100)) {
+			x = x+10;
+
+			noFill();
+			stroke("#ed3911")
+			circle(0, 150, x);
+		} 
+		//BOREDOM
+		else {
+			// x = x+10;
+			// stroke("#EDDE11");
+			// noFill();
+			// stroke("#ed3911")
+			// circle(0, 150, x);
 		}
 
 	}
