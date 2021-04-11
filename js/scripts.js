@@ -38,6 +38,8 @@ function draw() {
 
 			strokeWeight(2);
 			cTracker.draw(drawCanvas);
+
+			//print("y:" + position[44][1] + "y:" + position[50][1]);
 //makes laoding extremely slow and inconsistent
 		// if ((position[1][0]>175)&&(position[13][0]<320)) {
 		// 	stroke(0);
@@ -53,51 +55,58 @@ function draw() {
 		// 	strokeWeight(2);
 		// 	cTracker.draw(drawCanvas);
 		// }
+
 		//DEFIANCE
+		// if ((position[7][1]<235)&&(position[7][1]>225)) {
 
-		if ((position[7][1]<240)&&(position[7][1]>230)) {
+		// 	noFill();
+		// 	strokeWeight(10);
+		// 	stroke("#11ed11")
 
-			noFill();
-			strokeWeight(10);
-			stroke("#11ed11")
-
-			circle(0, 200, diameter);
-		}
+		// 	circle(0, 200, diameter);
+		// }
 		//DISGUST
-		else if ((position[62][1]<152)&&(position[62][1]>143)) {
+		if ((position[62][1]<155)&&(position[62][1]>145)) {
 
 			noFill();
 			strokeWeight(2);
-			stroke("#6f8695")
+			stroke("#000059")
 			circle(0, 200, diameter);
 		} 
 		
 		
-		//SHOCK
-		else if ((position[57][1]<205)&&(position[57][1]>196)) {
+		// //SHOCK
+		// else if ((position[57][1]<236)&&(position[57][1]>200)) {
 
-			noFill();
-			strokeWeight(3);
-			stroke("#11e6ed")
-			circle(0, 200, diameter);
-		}
-		//SKEPTICISM
-		else if ((position[20][1]<100)&&(position[17][1]<97)) {
+		// 	noFill();
+		// 	strokeWeight(3);
+		// 	stroke("#ffffff")
+		// 	circle(0, 200, diameter);
+		// }
+		// //SKEPTICISM
+		// else if ((position[20][1]<100)&&(position[17][1]<97)) {
 
-			noFill();
-			strokeWeight(5);
-			stroke("#ed3911")
-			circle(0, 200, diameter);
-		}
+		// 	noFill();
+		// 	strokeWeight(5);
+		// 	stroke("#ed3911")
+		// 	circle(0, 200, diameter);
+		// }
+		// //HAPPINESS
+		// else if ((position[44][1]<200)&&(position[50][1]<200)&&(position[44][1]>180)&&(position[50][1]>180)) {
 
+		// 	noFill();
+		// 	strokeWeight(10);
+		// 	stroke("#edde11")
+		// 	circle(0, 200, diameter);
+		// }
 		//BOREDOM
 		else {
 
 			stroke("#000000");
-			noFill();
-			strokeWeight(1);
-			stroke("#ed3911")
-			circle(0, 200, diameter);
+			// noFill();
+			// strokeWeight(1);
+			// stroke("#ed3911")
+			// circle(0, 200, diameter);
 		}
 
 	}
