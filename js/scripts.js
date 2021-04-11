@@ -20,6 +20,12 @@ function setup() {
 
 function draw() {
 
+	var x = 15;	
+
+	background(255);
+	rect(175,50, 225, 225);
+	stroke(0);
+
 	translate(vidCapture.width, 0);
 	scale(-1,1);
 	
@@ -31,6 +37,26 @@ function draw() {
 
 	if (position) {
 		//content calling from facial trace
+		strokeWeight(2);
+		stroke(0);
+
+		print("y: " + position[57][1]);
+		//only work in this statement
+		cTracker.draw(drawCanvas);
+
+		if ((position[62][1]<155)&&(position[62][1]>135)) {
+			x = x+10;
+
+			noFill();
+			circle(100, 100, x);
+		} 
+
+		if ((position[57][1]<210)&&(position[57][1]>192)) {
+			x = x+10;
+
+			noFill();
+			circle(100, 100, x);
+		}
 
 	}
 	
