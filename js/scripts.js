@@ -33,13 +33,13 @@ function draw() {
 			rect(175, 50, 225, 225);
 			line(210, 20, 210, 300);
 			line(360, 20, 360, 300);
-			line(160, 160, 420, 160);
+			line(160, 170, 420, 170);
 			line(160, 245, 420, 245);
 
 			strokeWeight(2);
 			cTracker.draw(drawCanvas);
 
-			//print("y:" + position[44][1] + "y:" + position[50][1]);
+			//print("y:" + position[60][1] + "y:" + position[57][1]);
 //makes laoding extremely slow and inconsistent
 		// if ((position[1][0]>175)&&(position[13][0]<320)) {
 		// 	stroke(0);
@@ -55,58 +55,55 @@ function draw() {
 		// 	strokeWeight(2);
 		// 	cTracker.draw(drawCanvas);
 		// }
-
-		//DEFIANCE
-		// if ((position[7][1]<235)&&(position[7][1]>225)) {
-
-		// 	noFill();
-		// 	strokeWeight(10);
-		// 	stroke("#11ed11")
-
-		// 	circle(0, 200, diameter);
-		// }
-		//DISGUST
-		// else if ((position[62][1]<155)&&(position[62][1]>145)) {
-
-		// 	noFill();
-		// 	strokeWeight(2);
-		// 	stroke("#000059")
-		// 	circle(0, 200, diameter);
-		// } 
 		
-		// //SHOCK
-		// else if ((position[57][1]<236)&&(position[57][1]>210)) {
-
-		// 	noFill();
-		// 	strokeWeight(3);
-		// 	stroke("#000059")
-		// 	circle(0, 200, diameter);
-		// }
-		// //SKEPTICISM
-		else if ((position[20][1]<100)&&(position[17][1]<97)) {
-
+		//SHOCK
+		if ((position[57][1]<236)&&(position[57][1]>210)) {
+			noFill();
+			strokeWeight(3);
+			stroke("#ffffff")
+			circle(0, 200, diameter);
+		}
+		//SKEPTICISM
+		else if ((position[20][1]<100)&&(position[17][1]<100)) {
 			noFill();
 			strokeWeight(5);
 			stroke("#ed3911")
 			circle(0, 200, diameter);
 		}
-		// //HAPPINESS
-		// else if ((position[44][1]<200)&&(position[50][1]<200)&&(position[44][1]>180)&&(position[50][1]>180)) {
-
-		// 	noFill();
-		// 	strokeWeight(10);
-		// 	stroke("#edde11")
-		// 	circle(0, 200, diameter);
-		// }
+		//HAPPINESS
+		else if ((position[44][1]<197)&&(position[50][1]<195)&&(position[44][1]>180)&&(position[50][1]>180)) {
+			noFill();
+			strokeWeight(2);
+			stroke("#edde11")
+			circle(0, 200, diameter);
+		}
+		//DISGUST
+		else if ((position[62][1]<155)&&(position[62][1]>150)) {
+			noFill();
+			strokeWeight(10);
+			stroke("#000059")
+			circle(0, 200, diameter);
+		} 
+		//DEFIANCE
+		else if ((position[7][1]<243)&&(position[7][1]>235)&&(position[7][0]>210)&&(position[7][0]<360)) {
+			noFill();
+			strokeWeight(15);
+			stroke("#11ed11");
+			circle(0, 200, diameter);
+		}
+		//SHAME
+		else if ((position[7][1]>249)&&(position[7][1]<255)) {
+			noFill();
+			strokeWeight(15);
+			stroke("#8f0651");
+			circle(0, 200, diameter);
+		}
 		//BOREDOM
-		// else {
-
-		// 	stroke("#000000");
-		// 	// noFill();
-		// 	// strokeWeight(1);
-		// 	// stroke("#ed3911")
-		// 	// circle(0, 200, diameter);
-		// }
-
+		else if ((position[57][1]<198)&&(position[57][1]>195)) {
+			noFill();
+			strokeWeight(1);
+			stroke("#899c9a")
+			circle(0, 200, diameter);
+		}
 	}
 }
