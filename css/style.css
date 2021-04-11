@@ -1,0 +1,21 @@
+* {
+	box-sizing: border-box;
+}
+html, body {
+	min-height: 100vh;
+	margin: 0;
+	background-color: #F7EDE2;
+}
+img {
+	max-width: 100%;
+}
+header {
+	margin-top: 30px;
+}
+.logo {
+	background-image: url(../imgs/impression-logo.svg);
+	background-repeat: no-repeat;
+	margin: auto;
+	width: 400px;
+	height: 150px;
+}
