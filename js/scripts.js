@@ -39,7 +39,7 @@ function draw() {
 			strokeWeight(2);
 			cTracker.draw(drawCanvas);
 
-			//print("y:" + position[60][1] + "y:" + position[57][1]);
+			//print("y:" + position[0][1] + "y:" + position[14][1]);
 //makes laoding extremely slow and inconsistent
 		// if ((position[1][0]>175)&&(position[13][0]<320)) {
 		// 	stroke(0);
@@ -57,14 +57,14 @@ function draw() {
 		// }
 		
 		//SHOCK
-		if ((position[57][1]<236)&&(position[57][1]>210)) {
+		if ((position[57][1]<225)&&(position[57][1]>210)) {
 			noFill();
 			strokeWeight(3);
 			stroke("#ffffff")
 			circle(0, 200, diameter);
 		}
 		//SKEPTICISM
-		else if ((position[20][1]<100)&&(position[17][1]<100)) {
+		else if ((position[20][1]<105)&&(position[17][1]<105)) {
 			noFill();
 			strokeWeight(5);
 			stroke("#ed3911")
@@ -77,26 +77,32 @@ function draw() {
 			stroke("#edde11")
 			circle(0, 200, diameter);
 		}
-		//DISGUST
-		else if ((position[62][1]<155)&&(position[62][1]>150)) {
-			noFill();
-			strokeWeight(10);
-			stroke("#000059")
-			circle(0, 200, diameter);
-		} 
 		//DEFIANCE
-		else if ((position[7][1]<243)&&(position[7][1]>235)&&(position[7][0]>210)&&(position[7][0]<360)) {
+		else if ((position[7][0]>210)&&(position[7][0]<260)) {
 			noFill();
 			strokeWeight(15);
 			stroke("#11ed11");
 			circle(0, 200, diameter);
 		}
 		//SHAME
-		else if ((position[7][1]>249)&&(position[7][1]<255)) {
+		else if ((position[7][1]>255)&&(position[7][1]<275)) {
 			noFill();
 			strokeWeight(15);
 			stroke("#8f0651");
 			circle(0, 200, diameter);
+		}
+		//CONFUSED
+		else if ((position[0][0]>230)&&(position[0][0]<243)) {
+			noFill();
+			strokeWeight(14);
+			stroke("#d67281");
+			circle(0, 200, diameter);
+		}
+		else if ((position[14][0]<340)&&(position[14][0]>310)) {
+			noFill();
+			strokeWeight(14);
+			stroke("#d67281");
+			circle(0, 200, diameter);		
 		}
 		//BOREDOM
 		else if ((position[57][1]<198)&&(position[57][1]>195)) {
@@ -105,5 +111,12 @@ function draw() {
 			stroke("#899c9a")
 			circle(0, 200, diameter);
 		}
+				//DISGUST
+		else if ((position[62][1]<155)&&(position[62][1]>135)) {
+			noFill();
+			strokeWeight(10);
+			stroke("#000059")
+			circle(0, 200, diameter);
+		} 
 	}
 }
