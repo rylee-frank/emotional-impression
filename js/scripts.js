@@ -2,7 +2,7 @@
 var vidCapture, cTracker, drawCanvas;
 
 function setup() {
-	var cvn = createCanvas(windowWidth, windowHeight/2+75);
+	var cvn = createCanvas(600, windowHeight/2+75);
 	cvn.parent('canvas');
 
 	vidCapture = createCapture(VIDEO);
@@ -22,7 +22,7 @@ function draw() {
 
 	var diameter = random(10, 200);
 
-	translate(vidCapture.width, 0);
+	translate(400, 0);
 	scale(-1,1);
 
 	var position = cTracker.getCurrentPosition();
@@ -32,11 +32,11 @@ function draw() {
 		stroke(0);
 		fill("#e6e7e8");
 		strokeWeight(0.5);
-		rect(175, 50, 225, 225);
-		line(210, 20, 210, 300);
-		line(360, 20, 360, 300);
-		line(160, 170, 420, 170);
-		line(160, 245, 420, 245);
+		rect(150, 50, 225, 225);
+		line(185, 20, 185, 300);
+		line(335, 20, 335, 300);
+		line(135, 170, 395, 170);
+		line(135, 245, 395, 245);
 		strokeWeight(2);
 		cTracker.draw(drawCanvas);
 
