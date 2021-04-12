@@ -3,7 +3,7 @@
 
 Emotions have a lasting impression, how you act towards someone will be a basis for how they treat you. Like the rings in the circle, they build off the previous emotion, and the ultimate color combination is determined by the expressions on your face. This website will let you visualize the emotions you portray and how they can haunt you. Different colors represent different emotions; the more you portray one emotion, the more the circle becomes that color. If it’s positive emotions that’s great, you’re leaving a good lasting impression. If you get a negative emotion, work to rid it from your circle. Don’t remain static once you find a positive emotion; like in life, you will be constantly reacting to your surrounding so your facial expressions will change and your circle should reflect that. 
 
-The colors of the emotions are not provided because it is up to you, the user to determine what action/expression achieves the listed emotions and the corresponding color. The emotions that you will be seeking to express are:
+The colors of the emotions are not provided on the website because it is up to you, the user to determine what action/expression achieves the listed emotions and the corresponding color. The emotions that you will be seeking to express are:
 
 Can you make a circle of just happiness and defiance or does disbelief somehow keep popping in occasionally?
 
