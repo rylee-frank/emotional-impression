@@ -24,4 +24,4 @@ Line up the outline of your face with the guidelines and experiment. Adjust your
 
 [clmtrackr | auduno](https://github.com/auduno/clmtrackr)
 
- Rylee Frank | University of Lethbridge | NMED3720 Dynamic Web |Copyright 2021
+ Rylee Frank | University of Lethbridge | NMED3720 Dynamic Web | Copyright 2021
