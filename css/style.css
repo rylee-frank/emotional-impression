@@ -61,19 +61,19 @@ header {
 .emotion1 {
 	grid-column-start: 5;
 	grid-column-end: 6;
-	padding-top: 70px;
+	padding-top: 100px;
 	border-right: 8px;
 	border-right-style: dotted;
 	border-right-color: black;
 	padding-right: 20px;
 	text-align: right;
-	margin-bottom: 110px;
+	margin-bottom: 130px;
 }
 .emotion2 {
 	grid-column-start: 6;
 	grid-column-end: 7;
 	padding-left: 30px;
-	margin-top: 88px;
+	margin-top: 95px;
 	text-align: left;
 }
 footer {

@@ -15,7 +15,6 @@ Line up the outline of your face with the guidelines and experiment. Adjust your
 #### HAPPINESS | yellow |
 #### SHAME | dark purple |
 #### DEFIANCE | red |
-#### CONFUSION | green-yellow |
 #### BOREDOM | purple-grey |
 
 ### libraries used to create this website

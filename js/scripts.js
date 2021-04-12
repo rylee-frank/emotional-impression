@@ -40,7 +40,7 @@ function draw() {
 		strokeWeight(2);
 		cTracker.draw(drawCanvas);
 
-		//print("y:" + position[61][1]+ "y:" + position[59][1]);
+		print("x:" + position[0][0]+ "x:" + position[14][0]);
 
 		//makes laoding extremely slow and inconsistent
 		// if ((position[1][0]>175)&&(position[13][0]<320)) {
@@ -63,61 +63,48 @@ function draw() {
 			noFill();
 			strokeWeight(0.5);
 			stroke("#ffe6fe")
-			circle(-50, 150, diameter);
+			circle(-80, 150, diameter);
 		}
 		//SKEPTICISM
 		else if ((position[20][1]<100)&&(position[17][1]<100)) {
 			noFill();
-			strokeWeight(4);
+			strokeWeight(2);
 			stroke("#0daa9f")
-			circle(-50, 150, diameter);
+			circle(-80, 150, diameter);
 		}
 		//HAPPINESS
 		else if ((position[59][1]<193)&&(position[61][1]<193)&&(position[59][1]>187)&&(position[61][1]>187)) {
 			noFill();
-			strokeWeight(5);
+			strokeWeight(3);
 			stroke("#ffd400")
-			circle(-50, 150, diameter);
+			circle(-80, 150, diameter);
 		}
 		//DEFIANCE
 		else if ((position[7][0]<320)&&(position[7][0]>290)) {
 			noFill();
-			strokeWeight(4);
+			strokeWeight(2.5);
 			stroke("#a71e22");
-			circle(-50, 150, diameter);
+			circle(-80, 150, diameter);
 		}
-		else if ((position[7][0]>245)&&(position[7][0]<260)) {
+		else if ((position[7][0]>215)&&(position[7][0]<240)) {
 			noFill();
-			strokeWeight(4);
+			strokeWeight(2.5);
 			stroke("#a71e22");
-			circle(-50, 150, diameter);
+			circle(-80, 150, diameter);
 		}
 		//SHAME
-		else if ((position[7][1]>255)&&(position[7][1]<275)) {
+		else if ((position[7][1]>255)&&(position[7][1]<285)) {
 			noFill();
-			strokeWeight(3);
+			strokeWeight(1.5);
 			stroke("#230c13");
-			circle(-50, 150, diameter);
-		}
-		//CONFUSED
-		else if ((position[0][0]>240)&&(position[0][0]<263)) {
-			noFill();
-			strokeWeight(2);
-			stroke("#b5ce00");
-			circle(-50, 150, diameter);
-		}
-		else if ((position[14][0]<330)&&(position[14][0]>290)) {
-			noFill();
-			strokeWeight(2);
-			stroke("#b5ce00");
-			circle(-50, 150, diameter);		
+			circle(-80, 150, diameter);
 		}
 		//BOREDOM
 		else if ((position[57][1]<200)&&(position[57][1]>195)) {
 			noFill();
 			strokeWeight(1);
 			stroke("#6d5d6b")
-			circle(-50, 150, diameter);
+			circle(-80, 150, diameter);
 		}
 	}
 }
