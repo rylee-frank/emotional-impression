@@ -15,6 +15,8 @@ Can you make a circle of just happiness and defiance or does disbelief somehow k
 
 Line up the outline of your face with the guidelines and experiment. Adjust your head along with your expressions and see what movements activate the emotion. The color combination of the rings will visualize your impression on someone. 
 
+Note how fast the an emotion takes over the circle - is it slow and therefore it takes time for it to significantly impact the circle or is it quick and quickly makes an impression?
+
 #### SHOCK | light purple |
 #### DISBELIEF | turquoise |
 #### HAPPINESS | yellow |

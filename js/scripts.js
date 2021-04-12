@@ -82,20 +82,20 @@ function draw() {
 		//DEFIANCE
 		else if ((position[7][0]<320)&&(position[7][0]>290)) {
 			noFill();
-			strokeWeight(2.5);
+			strokeWeight(2);
 			stroke("#a71e22");
 			circle(-80, 150, diameter);
 		}
 		else if ((position[7][0]>215)&&(position[7][0]<240)) {
 			noFill();
-			strokeWeight(2.5);
+			strokeWeight(2);
 			stroke("#a71e22");
 			circle(-80, 150, diameter);
 		}
 		//SHAME
 		else if ((position[7][1]>255)&&(position[7][1]<285)) {
 			noFill();
-			strokeWeight(1.5);
+			strokeWeight(2.5);
 			stroke("#230c13");
 			circle(-80, 150, diameter);
 		}
