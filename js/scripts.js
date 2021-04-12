@@ -40,7 +40,7 @@ function draw() {
 		strokeWeight(2);
 		cTracker.draw(drawCanvas);
 
-		print("x:" + position[0][0]+ "x:" + position[14][0]);
+		//print("x:" + position[0][0]+ "x:" + position[14][0]);
 
 		//makes laoding extremely slow and inconsistent
 		// if ((position[1][0]>175)&&(position[13][0]<320)) {
@@ -66,7 +66,7 @@ function draw() {
 			circle(-80, 150, diameter);
 		}
 		//SKEPTICISM
-		else if ((position[20][1]<100)&&(position[17][1]<100)) {
+		else if ((position[20][1]<105)&&(position[17][1]<100)) {
 			noFill();
 			strokeWeight(2);
 			stroke("#0daa9f")
