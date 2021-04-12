@@ -18,7 +18,7 @@ Line up the outline of your face with the guidelines and experiment. Adjust your
 #### CONFUSION | green-yellow |
 #### BOREDOM | purple-grey |
 
-###g libraries used to create this website
+### libraries used to create this website
 
 [p5.js | Lauren McCarthy](https://p5js.org)
 
