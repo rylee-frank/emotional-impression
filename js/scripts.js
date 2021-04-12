@@ -14,6 +14,8 @@ function setup() {
 	cTracker.start(vidCapture.elt);
 
 	drawCanvas = document.getElementById('defaultCanvas0');
+
+
 }
 
 function draw() {
@@ -30,11 +32,11 @@ function draw() {
 		stroke(0);
 		fill("#e6e7e8");
 		strokeWeight(0.5);
-		rect(75, 50, 225, 225);
-		line(110, 20, 110, 300);
-		line(260, 20, 260, 300);
-		line(60, 170, 320, 170);
-		line(60, 245, 320, 245);
+		rect(175, 50, 225, 225);
+		line(210, 20, 210, 300);
+		line(360, 20, 360, 300);
+		line(160, 170, 420, 170);
+		line(160, 245, 420, 245);
 		strokeWeight(2);
 		cTracker.draw(drawCanvas);
 
@@ -61,61 +63,61 @@ function draw() {
 			noFill();
 			strokeWeight(0.5);
 			stroke("#ffe6fe")
-			circle(-175, 150, diameter);
+			circle(-50, 150, diameter);
 		}
 		//SKEPTICISM
 		else if ((position[20][1]<100)&&(position[17][1]<100)) {
 			noFill();
 			strokeWeight(4);
 			stroke("#0daa9f")
-			circle(-175, 150, diameter);
+			circle(-50, 150, diameter);
 		}
 		//HAPPINESS
 		else if ((position[59][1]<193)&&(position[61][1]<193)&&(position[59][1]>187)&&(position[61][1]>187)) {
 			noFill();
 			strokeWeight(5);
 			stroke("#ffd400")
-			circle(-175, 150, diameter);
+			circle(-50, 150, diameter);
 		}
 		//DEFIANCE
-		else if ((position[7][0]<220)&&(position[7][0]>190)) {
+		else if ((position[7][0]<320)&&(position[7][0]>290)) {
 			noFill();
 			strokeWeight(4);
 			stroke("#a71e22");
-			circle(-175, 150, diameter);
+			circle(-50, 150, diameter);
 		}
-		else if ((position[7][0]>145)&&(position[7][0]<160)) {
+		else if ((position[7][0]>245)&&(position[7][0]<260)) {
 			noFill();
 			strokeWeight(4);
 			stroke("#a71e22");
-			circle(-175, 150, diameter);
+			circle(-50, 150, diameter);
 		}
 		//SHAME
 		else if ((position[7][1]>255)&&(position[7][1]<275)) {
 			noFill();
 			strokeWeight(3);
 			stroke("#230c13");
-			circle(-175, 150, diameter);
+			circle(-50, 150, diameter);
 		}
 		//CONFUSED
-		else if ((position[0][0]>140)&&(position[0][0]<163)) {
+		else if ((position[0][0]>240)&&(position[0][0]<263)) {
 			noFill();
 			strokeWeight(2);
 			stroke("#b5ce00");
-			circle(-175, 150, diameter);
+			circle(-50, 150, diameter);
 		}
-		else if ((position[14][0]<230)&&(position[14][0]>190)) {
+		else if ((position[14][0]<330)&&(position[14][0]>290)) {
 			noFill();
 			strokeWeight(2);
 			stroke("#b5ce00");
-			circle(-175, 150, diameter);		
+			circle(-50, 150, diameter);		
 		}
 		//BOREDOM
 		else if ((position[57][1]<200)&&(position[57][1]>195)) {
 			noFill();
 			strokeWeight(1);
 			stroke("#6d5d6b")
-			circle(-175, 150, diameter);
+			circle(-50, 150, diameter);
 		}
 	}
 }

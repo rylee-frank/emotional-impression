@@ -47,8 +47,14 @@ header {
 	margin: 0;
 	margin-top: 75px;
 }
-.canvas {
+.guide {
 	grid-column-start: 1;
+	grid-column-end: 2;
+	background-image: url(../imgs/guide.svg);
+	background-repeat: no-repeat;
+}
+.canvas {
+	grid-column-start: 2;
 	grid-column-end: 4;
 }
 .emotion1 {
