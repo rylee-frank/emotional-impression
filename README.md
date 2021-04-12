@@ -1,5 +1,5 @@
 # impression: 
-###() to have or create a strong impact on someone, whether good or bad
+### to have or create a strong impact on someone, whether good or bad
 
 Emotions have a lasting impression, how you act towards someone will be a basis for how they treat you. Like the rings in the circle, they build off the previous emotion, and the ultimate color combination is determined by the expressions on your face. This website will let you visualize the emotions you portray and how they can haunt you. Different colors represent different emotions; the more you portray one emotion, the more the circle becomes that color. If it’s positive emotions that’s great, you’re leaving a good lasting impression. If you get a negative emotion, work to rid it from your circle. Don’t remain static once you find a positive emotion; like in life, you will be constantly reacting to your surrounding so your facial expressions will change and your circle should reflect that. 
 
@@ -18,7 +18,8 @@ Line up the outline of your face with the guidelines and experiment. Adjust your
 #### CONFUSION | green-yellow |
 #### BOREDOM | purple-grey |
 
-### libraries used to create this website
+###g libraries used to create this website
 
 [p5.js | Lauren McCarthy](https://p5js.org)
+
 [clmtrackr | auduno](https://github.com/auduno/clmtrackr)
